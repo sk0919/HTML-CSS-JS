@@ -1,0 +1,59 @@
+	<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+		 transfar page
+		</title>
+		<style>
+			body{
+				margin: 0;
+				background:  yellowgreen;
+			}
+			#tom{
+				position: absolute;
+				top:40%;
+				left:40%;
+				width: 300px;
+				text-align: center;
+				height: 50px;
+				font-size: 20px;
+				background: linear-gradient(to right, orange,aqua);
+				border-color: blue;
+				border:4 solid ;
+				cursor: pointer;
+				transition: 1.5s;
+				color: blue;
+			}
+			#tom:hover {
+				transform: scale(1.5);
+				border-top-left-radius: 30;
+				border-bottom-right-radius: 30;
+				background: linear-gradient(to right, black,red);
+				color: yellowgreen;
+				border-top-color: rgba(0,0,0,9);
+				border-left-color: rgba(0,0,0,9);
+				border-bottom-color: green;
+				border-right-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<button id="tom" onclick="btn()">
+			transfar page
+		</button>
+		<script type="text/javascript">
+				function btn(){
+				var user = confirm(" hi bro ! you  want to visit website");
+				
+				if(user == true){
+					window.open("calculator.html");
+					//here we gave a html file name or we can give location of another file.
+					return  true;
+				}else{
+				document.write(" you does not want to visit website");
+				return  false;
+				}
+				}    
+			</script>
+	</body>
+</html>
